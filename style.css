@@ -21,6 +21,8 @@ body{
 .intro{
     width: 100%;
     height: 200px;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
     color: black;
     font-size: 4rem;
@@ -65,10 +67,57 @@ body{
         color: white;
     }
     50%{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     100%{
         color: black;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .face {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(187, 187, 30);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .eye {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 249, 249);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+  }
+  
+  .left-eye {
+    left: 35px;
+  }
+  
+  .right-eye {
+    left: 85px;
+    top: 20px; /* Move the right eye higher for the wink effect */
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    width: 50px;
+    height: 25px;
+    border-bottom: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
